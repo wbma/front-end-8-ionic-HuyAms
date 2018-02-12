@@ -1,0 +1,21 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+<ion-content padding>
+  <input [(ngModel)]="user.username" placeholder="Username" name="username">
+  <br>
+  <input [(ngModel)]="user.password" type="password" placeholder="Password" name="password">
+  <br>
+  <input [(ngModel)]="user.email" placeholder="Email" name="Email">
+  <br>
+  <input [(ngModel)]="user.full_name" placeholder="Full name" name="Fullname">
+  <br>
+  <button (click)="login()">Login</button>
+  <button (click)="register()">Register</button>
+</ion-content>
+
